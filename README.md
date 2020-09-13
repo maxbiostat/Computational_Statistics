@@ -1,4 +1,4 @@
-# Computational_Statistics
+# Computational Statistics ("Estatística Computacional")
 
 Course materials for Computational Statistics, PhD course at [EMAp](http://emap.fgv.br/).
 
