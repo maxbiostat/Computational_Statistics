@@ -5,6 +5,8 @@ Course materials for Computational Statistics, a PhD-level course at [EMAp](http
 ## Lecture notes and other resources
 
 We will be using the excellent [materials](http://www.stats.ox.ac.uk/~rebeschi/teaching/AdvSim/18/index.html) from Professor Patrick Rebeschini (Oxford University) as a general guide for our course. 
+Lecture [notes](https://statweb.stanford.edu/~susan/courses/s227/)  by the stellar statistician [Susan Holmes](https://statweb.stanford.edu/~susan/) are also well worth taking a look.
+
 Other materials, including lecture notes and slides may be posted here as the course progresses. 
 
 ## Simulation
@@ -12,6 +14,10 @@ Other materials, including lecture notes and slides may be posted here as the co
 - [Random Number Generation](https://www.iro.umontreal.ca/~lecuyer/myftp/papers/handstat.pdf) by [Pierre L'Ecuyer](http://www-labs.iro.umontreal.ca/~lecuyer/);
 - [Non-Uniform Random Variate Generation](http://www.nrbook.com/devroye/) by the great [Luc Devroye](http://luc.devroye.org/);
 
+### Markov chain Monte Carlo.
+
+-Charlie Geyer's [website](http://users.stat.umn.edu/~geyer/) is a treasure trove of material on Statistics in general, MCMC methods in particular. 
+See, for instance, [On the Bogosity of MCMC Diagnostics](http://users.stat.umn.edu/~geyer/mcmc/diag.html). 
 
 ### Extra (fun) resources
 
