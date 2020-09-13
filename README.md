@@ -1,6 +1,11 @@
-# Computational Statistics ("Estatística Computacional")
+# Computational Statistics (["Estatística Computacional"](https://emap.fgv.br/disciplina/doutorado/estatistica-computacional))
 
 Course materials for Computational Statistics, PhD course at [EMAp](http://emap.fgv.br/).
+
+## Lecture notes and other resources
+
+We will be using the excellent [materials](http://www.stats.ox.ac.uk/~rebeschi/teaching/AdvSim/18/index.html) from Professor Patrick Rebeschini (Oxford University) as a general guide for our course. 
+Other materials, including lecture notes and slides may be posted here as the course progresses. 
 
 ## Simulation
 
@@ -8,7 +13,8 @@ Course materials for Computational Statistics, PhD course at [EMAp](http://emap.
 - [Non-Uniform Random Variate Generation](http://www.nrbook.com/devroye/) by the great [Luc Devroye](http://luc.devroye.org/);
 
 
-### External resources
+### Extra (fun) resources
+
 In these blogs and websites you will often find interesting discussions on computational, numerical and statistical aspects of applied Statistics and Mathematics.
 
 - Christian Robert's [blog](https://xianblog.wordpress.com/);
