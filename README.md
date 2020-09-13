@@ -1,6 +1,6 @@
 # Computational Statistics (["Estatística Computacional"](https://emap.fgv.br/disciplina/doutorado/estatistica-computacional))
 
-Course materials for Computational Statistics, PhD course at [EMAp](http://emap.fgv.br/).
+Course materials for Computational Statistics, a PhD-level course at [EMAp](http://emap.fgv.br/).
 
 ## Lecture notes and other resources
 
