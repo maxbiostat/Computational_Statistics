@@ -19,4 +19,4 @@ In these blogs and websites you will often find interesting discussions on compu
 
 - Christian Robert's [blog](https://xianblog.wordpress.com/);
 - John Cook's [website](https://www.johndcook.com/blog/);
-- [Statisfaction](https://statisfaction.wordpress.com/) blog;
+- [Statisfaction](https://statisfaction.wordpress.com/) blog.
