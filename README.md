@@ -9,6 +9,8 @@ Lecture [notes](https://statweb.stanford.edu/~susan/courses/s227/)  by stellar s
 
 Other materials, including lecture notes and slides may be posted here as the course progresses. 
 
+[Here](https://github.com/maxbiostat/Computational_Statistics/blob/master/annotated_bibliography.md) you can find a nascent annotated bibliography with landmark papers in the field. 
+
 ## Simulation
 
 - [Random Number Generation](https://www.iro.umontreal.ca/~lecuyer/myftp/papers/handstat.pdf) by [Pierre L'Ecuyer](http://www-labs.iro.umontreal.ca/~lecuyer/);
