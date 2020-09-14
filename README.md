@@ -14,7 +14,7 @@ Other materials, including lecture notes and slides may be posted here as the co
 - [Random Number Generation](https://www.iro.umontreal.ca/~lecuyer/myftp/papers/handstat.pdf) by [Pierre L'Ecuyer](http://www-labs.iro.umontreal.ca/~lecuyer/);
 - [Non-Uniform Random Variate Generation](http://www.nrbook.com/devroye/) by the great [Luc Devroye](http://luc.devroye.org/);
 
-### Markov chain Monte Carlo.
+### Markov chain Monte Carlo
 
 - Charlie Geyer's [website](http://users.stat.umn.edu/~geyer/) is a treasure trove of material on Statistics in general, MCMC methods in particular. 
 See, for instance, [On the Bogosity of MCMC Diagnostics](http://users.stat.umn.edu/~geyer/mcmc/diag.html). 
