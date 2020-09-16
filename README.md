@@ -36,7 +36,7 @@ See, for instance, [On the Bogosity of MCMC Diagnostics](http://users.stat.umn.e
 
 ## Miscellanea
 
-- In [these](https://terrytao.wordpress.com/2010/01/03/254a-notes-1-concentration-of-measure/) notes, [Terence Tao](https://en.wikipedia.org/wiki/Terence_Tao) gives insights in **concentration of measure**, which is the reason why integrating with respect to a probability measure in high-dimensional spaces is _hard_. 
+- In [these](https://terrytao.wordpress.com/2010/01/03/254a-notes-1-concentration-of-measure/) notes, [Terence Tao](https://en.wikipedia.org/wiki/Terence_Tao) gives insights into **concentration of measure**, which is the reason why integrating with respect to a probability measure in high-dimensional spaces is _hard_. 
 
 - [A Primer for the Monte Carlo Method](https://archive.org/details/APrimerForTheMonteCarloMethod), by the great [Ilya Sobol](https://en.wikipedia.org/wiki/Ilya_M._Sobol), is one of the first texts on the Monte Carlo method.
 
