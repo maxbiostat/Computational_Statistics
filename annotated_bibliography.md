@@ -9,6 +9,10 @@ In this seminal paper, Dempster, Laird and Rubin introduce the Expectation-Maxim
 
 - [Stochastic Relaxation, Gibbs Distributions, and the Bayesian Restoration of Images (1984)](http://www.cis.jhu.edu/publications/papers_in_database/GEMAN/GemanPAMI84.pdf). The famous Gibbs sampler was conceived by the Geman brothers in a situation where sampling from the whole target was a nightmare, but sampling from each conditional distribution was relatively easy. One of the working horses of computational statistics to this day.
 
+- [The Calculation of Posterior Distributions by Data Augmentation (1987)](http://www.stat.cmu.edu/~brian/905-2009/all-papers/tanner-wong-1987-with-disc.pdf). In this paper, Martin Tanner and Wing Wong show how to make a problem easier by making it bigger, i.e., by augmenting the state space _a la_ EM algorithm. 
+
+- [Markov chains for exploring posterior distributions (1994) ](http://www.stat.rutgers.edu/~rongchen/papers/tierney.pdf). In this landmark paper, [Luke Tierney](https://stat.uiowa.edu/people/luke-tierney) gives a great account of the theoretical underpinnings of MCMC theory. 
+
 - [Slice sampling (2003)](https://projecteuclid.org/euclid.aos/1056562461). In this seminal paper, Radford Neal introduces the slice sampler, a simple algorithm that often outpeforms Metropolis-Hastings-type samplers.
 
 - [MCMC using Hamiltonian dynamics (2011)](https://www.cs.utoronto.ca/~radford/ham-mcmc.abstract.html). Yet another masterpiece by Radford Neal, this paper provides a thorough review of the history and main concepts involving HMC.
