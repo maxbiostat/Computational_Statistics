@@ -42,7 +42,7 @@ See, for instance, [On the Bogosity of MCMC Diagnostics](http://users.stat.umn.e
 
 - [A Primer for the Monte Carlo Method](https://archive.org/details/APrimerForTheMonteCarloMethod), by the great [Ilya Sobol](https://en.wikipedia.org/wiki/Ilya_M._Sobol), is one of the first texts on the Monte Carlo method.
 
-- The Harris inequality, `E[fg] >= E[f]E[g]`, for `f` and `g` increasing is a special case of the [FKG inequality](https://en.wikipedia.org/wiki/FKG_inequality). 
+- The Harris inequality, `E[fg] >= E[f]E[g]`, for `f` and `g` increasing, is a special case of the [FKG inequality](https://en.wikipedia.org/wiki/FKG_inequality). 
 
 
 ### Extra (fun) resources
