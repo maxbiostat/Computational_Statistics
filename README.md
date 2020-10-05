@@ -24,6 +24,8 @@ Books marked with [a] are advanced material.
 - Givens, G. H., & Hoeting, J. A. (2012). [Computational Statistics](https://www.stat.colostate.edu/computationalstatistics/) (Vol. 710). John Wiley & Sons.
 - [a] Meyn, S. P., & Tweedie, R. L. (2012). [Markov chains and stochastic stability](https://www.springer.com/gp/book/9781447132691). Springer Science & Business Media.
 - [a] Nummelin, E. (2004). [General irreducible Markov chains and non-negative operators](https://www.cambridge.org/core/books/general-irreducible-markov-chains-and-nonnegative-operators/0557D49C011AA90B761FC854D5C14983) (Vol. 83). Cambridge University Press.
+- Bernardo, J. M., & Smith, A. F. (2009). [Bayesian Theory](https://statisticalsupportandresearch.files.wordpress.com/2019/03/josc3a9-m.-bernardo-adrian-f.-m.-smith-bayesian-theory-wiley-1994.pdf)  (Vol. 405). John Wiley & Sons. (PS: link is to the 1994 edition).
+
 ## Simulation
 
 - [Random Number Generation](https://www.iro.umontreal.ca/~lecuyer/myftp/papers/handstat.pdf) by [Pierre L'Ecuyer](http://www-labs.iro.umontreal.ca/~lecuyer/);
@@ -36,6 +38,7 @@ Books marked with [a] are advanced material.
 - Charlie Geyer's [website](http://users.stat.umn.edu/~geyer/) is a treasure trove of material on Statistics in general, MCMC methods in particular. 
 See, for instance, [On the Bogosity of MCMC Diagnostics](http://users.stat.umn.edu/~geyer/mcmc/diag.html). 
 
+
 ## Miscellanea
 
 - In [these](https://terrytao.wordpress.com/2010/01/03/254a-notes-1-concentration-of-measure/) notes, [Terence Tao](https://en.wikipedia.org/wiki/Terence_Tao) gives insights into **concentration of measure**, which is the reason why integrating with respect to a probability measure in high-dimensional spaces is _hard_. 
@@ -44,6 +47,8 @@ See, for instance, [On the Bogosity of MCMC Diagnostics](http://users.stat.umn.e
 
 - The Harris inequality, `E[fg] >= E[f]E[g]`, for `f` and `g` increasing, is a special case of the [FKG inequality](https://en.wikipedia.org/wiki/FKG_inequality). 
 
+- In [Markov Chain Monte Carlo Maximum Likelihood](https://www.stat.umn.edu/geyer/f05/8931/c.pdf), Charlie Geyer shows how one can use MCMC to do maximum likelihood estimation when the likelihood cannot be written in closed-form.
+This paper is an example of MCMC methods being used outside of Bayesian statistics.
 
 ### Extra (fun) resources
 
