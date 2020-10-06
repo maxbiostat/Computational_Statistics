@@ -25,6 +25,7 @@ Books marked with [a] are advanced material.
 - [a] Meyn, S. P., & Tweedie, R. L. (2012). [Markov chains and stochastic stability](https://www.springer.com/gp/book/9781447132691). Springer Science & Business Media.
 - [a] Nummelin, E. (2004). [General irreducible Markov chains and non-negative operators](https://www.cambridge.org/core/books/general-irreducible-markov-chains-and-nonnegative-operators/0557D49C011AA90B761FC854D5C14983) (Vol. 83). Cambridge University Press.
 - Bernardo, J. M., & Smith, A. F. (2009). [Bayesian Theory](https://statisticalsupportandresearch.files.wordpress.com/2019/03/josc3a9-m.-bernardo-adrian-f.-m.-smith-bayesian-theory-wiley-1994.pdf)  (Vol. 405). John Wiley & Sons. (PS: link is to the 1994 edition).
+- Robert, C. (2007). [The Bayesian Choice](https://errorstatistics.files.wordpress.com/2016/03/robert-20071.pdf). Springer-Verlag.
 
 ## Simulation
 
