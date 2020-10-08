@@ -4,9 +4,13 @@ Course materials for Computational Statistics, a PhD-level course at [EMAp](http
 
 ## Lecture notes and other resources
 
-We will be using the excellent [materials](http://www.stats.ox.ac.uk/~rebeschi/teaching/AdvSim/18/index.html) from Professor Patrick Rebeschini (Oxford University) as a general guide for our course. 
-Lecture [notes](https://statweb.stanford.edu/~susan/courses/s227/)  by stellar statistician [Susan Holmes](https://statweb.stanford.edu/~susan/) are also well worth taking a look.
+- We will be using the excellent [materials](http://www.stats.ox.ac.uk/~rebeschi/teaching/AdvSim/18/index.html) from Professor Patrick Rebeschini (Oxford University) as a general guide for our course. 
 
+As complementary material,
+
+- These lecture [notes](https://statweb.stanford.edu/~susan/courses/s227/)  by stellar statistician [Susan Holmes](https://statweb.stanford.edu/~susan/) are also well worth taking a look.
+
+- [Monte Carlo theory, methods and examples](https://statweb.stanford.edu/~owen/mc/) by [Professor Art Owen](https://statweb.stanford.edu/~owen/), gives a nice and complete treatment of all the topics on simulation, including a whole chapter on variance reduction. 
 
 Other materials, including lecture notes and slides may be posted here as the course progresses. 
 
