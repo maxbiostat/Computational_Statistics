@@ -33,17 +33,17 @@ In particular, the procedure known as~\textit{Rao-Blackwellisation} allows one t
 \section*{Questions}
 
 \begin{enumerate}
- \item Show that, if $\pi(x) = \int_{\mathbb{X}} g(x\mid y) h(y)\,dy$, then both
+ \item Show that, if $\pi(x) = \int_{\mathbb{X}} g(x\mid y) \varphi(y)\,dy$, then both
  \begin{align*}
  \hat{I}_n^{\text{MC}} &= \frac{1}{n} \sum_{i=1}^n \varphi(X_i), \, X_i \sim \pi, \: \text{and}\\
- \hat{I}_n^{\text{RB}} &= \frac{1}{n} \sum_{i=1}^n E[h(X) \mid Y_i] , \, Y_i \sim g, 
+ \hat{I}_n^{\text{RB}} &= \frac{1}{n} \sum_{i=1}^n E[\varphi(X_i) \mid Y_i] , \, Y_i \sim \varphi, 
  \end{align*}
-converge to $E_\pi[X]$.
+converge to $E_\pi[\varphi(X)]$.
 \item For each of the following cases, generate random variables $X_i$ and $Y_i$ and compute the average and variance of the ``vanilla'' Monte Carlo and Rao-Blackwellised estimators:
 \begin{enumerate}[(a)]
  \item $X\mid Y \sim \operatorname{Poisson}(Y),\, Y \sim \operatorname{Gamma}(a, b) \implies X \sim \operatorname{Negative-Binomial}$;
   \item $X\mid Y \sim \operatorname{Normal}(0, Y),\, Y \sim \operatorname{Gamma}(a, b) \implies X \sim \operatorname{Generalised-t}$;
-   \item $X\mid Y \sim \operatorname{Binomial}(Y),\, Y \sim \operatorname{Beta}(a, b) \implies X \sim \operatorname{Beta-Binomial}$;
+   \item $X\mid Y \sim \operatorname{Binomial}(n, Y),\, Y \sim \operatorname{Beta}(a, b) \implies X \sim \operatorname{Beta-Binomial}$;
  \end{enumerate}
  
  \item Propose a Rejection Control (see Question 5 in exercise sheet 1) algorithm to sample from each of the targets in the previous question;
