@@ -36,7 +36,7 @@ In particular, the procedure known as~\textit{Rao-Blackwellisation} allows one t
  \item Show that, if $\pi(x) = \int_{\mathbb{X}} g(x\mid y) \varphi(y)\,dy$, then both
  \begin{align*}
  \hat{I}_n^{\text{MC}} &= \frac{1}{n} \sum_{i=1}^n \varphi(X_i), \, X_i \sim \pi, \: \text{and}\\
- \hat{I}_n^{\text{RB}} &= \frac{1}{n} \sum_{i=1}^n E[\varphi(X_i) \mid Y_i] , \, Y_i \sim \varphi, 
+ \hat{I}_n^{\text{RB}} &= \frac{1}{n} \sum_{i=1}^n E[\varphi(X) \mid Y_i] , \, Y_i \sim \varphi, 
  \end{align*}
 converge to $E_\pi[\varphi(X)]$.
 \item For each of the following cases, generate random variables $X_i$ and $Y_i$ and compute the average and variance of the ``vanilla'' Monte Carlo and Rao-Blackwellised estimators:
