@@ -43,8 +43,9 @@ Reference books are
 - Robert, C. (2007). [The Bayesian Choice](https://errorstatistics.files.wordpress.com/2016/03/robert-20071.pdf). Springer-Verlag.
 - Jaynes, E. T. (2003). Probability theory: The logic of science. Cambridge university press.
 
-- [This](https://normaldeviate.wordpress.com/2012/11/17/what-is-bayesianfrequentist-inference/) is the [Larry Wasserman](http://www.stat.cmu.edu/~larry/) blog post I discussed. 
+Some other material I mentioned during class.
 
+- [This](https://normaldeviate.wordpress.com/2012/11/17/what-is-bayesianfrequentist-inference/) is the [Larry Wasserman](http://www.stat.cmu.edu/~larry/) blog post I discussed. 
 - The vignette I mentioned is [here](https://cran.r-project.org/web/packages/LaplacesDemon/vignettes/BayesianInference.pdf).
 
 
