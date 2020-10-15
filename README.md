@@ -28,14 +28,24 @@ Books marked with [a] are advanced material.
 - Givens, G. H., & Hoeting, J. A. (2012). [Computational Statistics](https://www.stat.colostate.edu/computationalstatistics/) (Vol. 710). John Wiley & Sons.
 - [a] Meyn, S. P., & Tweedie, R. L. (2012). [Markov chains and stochastic stability](https://www.springer.com/gp/book/9781447132691). Springer Science & Business Media.
 - [a] Nummelin, E. (2004). [General irreducible Markov chains and non-negative operators](https://www.cambridge.org/core/books/general-irreducible-markov-chains-and-nonnegative-operators/0557D49C011AA90B761FC854D5C14983) (Vol. 83). Cambridge University Press.
-- Bernardo, J. M., & Smith, A. F. (2009). [Bayesian Theory](https://statisticalsupportandresearch.files.wordpress.com/2019/03/josc3a9-m.-bernardo-adrian-f.-m.-smith-bayesian-theory-wiley-1994.pdf)  (Vol. 405). John Wiley & Sons. (PS: link is to the 1994 edition).
-- Robert, C. (2007). [The Bayesian Choice](https://errorstatistics.files.wordpress.com/2016/03/robert-20071.pdf). Springer-Verlag.
 
 ## Simulation
 
 - [Random Number Generation](https://www.iro.umontreal.ca/~lecuyer/myftp/papers/handstat.pdf) by [Pierre L'Ecuyer](http://www-labs.iro.umontreal.ca/~lecuyer/);
 - [Non-Uniform Random Variate Generation](http://www.nrbook.com/devroye/) by the great [Luc Devroye](http://luc.devroye.org/);
 - [Rejection Control and Sequential importance sampling](http://stat.rutgers.edu/home/rongchen/publications/98JASA_rejection-control.pdf) (1998), by Liu et al. discusses how to improve importance sampling by controlling rejections.
+
+## Interlude: Bayesian Statistics
+
+Reference books are 
+
+- Bernardo, J. M., & Smith, A. F. (2009). [Bayesian Theory](https://statisticalsupportandresearch.files.wordpress.com/2019/03/josc3a9-m.-bernardo-adrian-f.-m.-smith-bayesian-theory-wiley-1994.pdf)  (Vol. 405). John Wiley & Sons. (PS: link is to the 1994 edition).
+- Robert, C. (2007). [The Bayesian Choice](https://errorstatistics.files.wordpress.com/2016/03/robert-20071.pdf). Springer-Verlag.
+- Jaynes, E. T. (2003). Probability theory: The logic of science. Cambridge university press.
+
+- [This](https://normaldeviate.wordpress.com/2012/11/17/what-is-bayesianfrequentist-inference/) is the [Larry Wasserman](http://www.stat.cmu.edu/~larry/) blog post I discussed. 
+
+- The vignette I mentioned is [here](https://cran.r-project.org/web/packages/LaplacesDemon/vignettes/BayesianInference.pdf).
 
 
 ### Markov chain Monte Carlo
