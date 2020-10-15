@@ -29,11 +29,7 @@ Books marked with [a] are advanced material.
 - [a] Meyn, S. P., & Tweedie, R. L. (2012). [Markov chains and stochastic stability](https://www.springer.com/gp/book/9781447132691). Springer Science & Business Media.
 - [a] Nummelin, E. (2004). [General irreducible Markov chains and non-negative operators](https://www.cambridge.org/core/books/general-irreducible-markov-chains-and-nonnegative-operators/0557D49C011AA90B761FC854D5C14983) (Vol. 83). Cambridge University Press.
 
-## Simulation
 
-- [Random Number Generation](https://www.iro.umontreal.ca/~lecuyer/myftp/papers/handstat.pdf) by [Pierre L'Ecuyer](http://www-labs.iro.umontreal.ca/~lecuyer/);
-- [Non-Uniform Random Variate Generation](http://www.nrbook.com/devroye/) by the great [Luc Devroye](http://luc.devroye.org/);
-- [Rejection Control and Sequential importance sampling](http://stat.rutgers.edu/home/rongchen/publications/98JASA_rejection-control.pdf) (1998), by Liu et al. discusses how to improve importance sampling by controlling rejections.
 
 ## Interlude: Bayesian Statistics
 
@@ -48,6 +44,12 @@ Some other material I mentioned during class.
 - [This](https://normaldeviate.wordpress.com/2012/11/17/what-is-bayesianfrequentist-inference/) is the [Larry Wasserman](http://www.stat.cmu.edu/~larry/) blog post I discussed. 
 - The vignette I mentioned is [here](https://cran.r-project.org/web/packages/LaplacesDemon/vignettes/BayesianInference.pdf).
 
+
+## Simulation
+
+- [Random Number Generation](https://www.iro.umontreal.ca/~lecuyer/myftp/papers/handstat.pdf) by [Pierre L'Ecuyer](http://www-labs.iro.umontreal.ca/~lecuyer/);
+- [Non-Uniform Random Variate Generation](http://www.nrbook.com/devroye/) by the great [Luc Devroye](http://luc.devroye.org/);
+- [Rejection Control and Sequential importance sampling](http://stat.rutgers.edu/home/rongchen/publications/98JASA_rejection-control.pdf) (1998), by Liu et al. discusses how to improve importance sampling by controlling rejections.
 
 ### Markov chain Monte Carlo
 
