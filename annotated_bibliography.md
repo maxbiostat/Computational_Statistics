@@ -15,6 +15,8 @@ In this seminal paper, Dempster, Laird and Rubin introduce the Expectation-Maxim
 
 - [Slice sampling (2003)](https://projecteuclid.org/euclid.aos/1056562461). In this seminal paper, Radford Neal introduces the slice sampler, a simple algorithm that often outpeforms Metropolis-Hastings-type samplers.
 
+- [General state space Markov chains and MCMC algorithms (2004)](https://projecteuclid.org/euclid.ps/1099928648) by [Gareth Roberts](https://en.wikipedia.org/wiki/Gareth_Roberts_(statistician)) and [Jeff Rosenthal](http://probability.ca/jeff/), brings results about Markov chains in uncountable state spaces and general conditions for geometric ergodicity are given. A complete treatise.
+
 - [MCMC using Hamiltonian dynamics (2011)](https://www.cs.utoronto.ca/~radford/ham-mcmc.abstract.html). Yet another masterpiece by Radford Neal, this paper provides a thorough review of the history and main concepts involving HMC.
 
 - [The No-U-Turn Sampler: Adaptively Setting Path Lengths in Hamiltonian Monte Carlo (2014)](https://arxiv.org/abs/1111.4246). Matt Hoffmann and Andrew Gelman introduce a novel algorithm that tunes the step size and tree depth of the HMC algorithm automatically.
