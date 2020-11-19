@@ -57,6 +57,10 @@ Some other material I mentioned during class:
 See, for instance, [On the Bogosity of MCMC Diagnostics](http://users.stat.umn.edu/~geyer/mcmc/diag.html). 
 
 
+## Optmisation
+
+- [Monte Carlo EM](https://github.com/bob-carpenter/case-studies/blob/master/monte-carlo-em/mcem.pdf) by Bob Carpenter (Columbia).
+
 ## Miscellanea
 
 - In [these](https://terrytao.wordpress.com/2010/01/03/254a-notes-1-concentration-of-measure/) notes, [Terence Tao](https://en.wikipedia.org/wiki/Terence_Tao) gives insights into **concentration of measure**, which is the reason why integrating with respect to a probability measure in high-dimensional spaces is _hard_. 
