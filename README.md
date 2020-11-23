@@ -24,7 +24,7 @@ Books marked with [a] are advanced material.
 - Gamerman, D., & Lopes, H. F. (2006). [Markov chain Monte Carlo: stochastic simulation for Bayesian inference](http://www.dme.ufrj.br/mcmc/). Chapman and Hall/CRC.
 - Robert, C. P., Casella, G. (2004). [Monte Carlo Statistical Methods](https://www.researchgate.net/profile/Christian_Robert2/publication/2681158_Monte_Carlo_Statistical_Methods/links/00b49535ccaf6ccc8f000000/Monte-Carlo-Statistical-Methods.pdf). John Wiley & Sons, Ltd.
 
-**Complementary**
+**Supplementary**
 - Givens, G. H., & Hoeting, J. A. (2012). [Computational Statistics](https://www.stat.colostate.edu/computationalstatistics/) (Vol. 710). John Wiley & Sons.
 - [a] Meyn, S. P., & Tweedie, R. L. (2012). [Markov chains and stochastic stability](https://www.springer.com/gp/book/9781447132691). Springer Science & Business Media.
 - [a] Nummelin, E. (2004). [General irreducible Markov chains and non-negative operators](https://www.cambridge.org/core/books/general-irreducible-markov-chains-and-nonnegative-operators/0557D49C011AA90B761FC854D5C14983) (Vol. 83). Cambridge University Press.
@@ -59,6 +59,7 @@ See, for instance, [On the Bogosity of MCMC Diagnostics](http://users.stat.umn.e
 
 ## Optmisation
 
+- The book [The EM algorithm and Extensions](https://books.google.com.br/books?hl=en&lr=&id=NBawzaWoWa8C&oi=fnd&pg=PR3&dq=The+EM+algorithm+and+Extensions&ots=tp68LOYAvP&sig=iCEMt5YUIMToTSESxLctWcob8VM#v=onepage&q=The%20EM%20algorithm%20and%20Extensions&f=false) is a well-cited resource.
 - [Monte Carlo EM](https://github.com/bob-carpenter/case-studies/blob/master/monte-carlo-em/mcem.pdf) by Bob Carpenter (Columbia).
 
 ## Miscellanea
