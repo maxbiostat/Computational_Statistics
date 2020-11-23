@@ -5,7 +5,7 @@
 3. [Maximum Likelihood from Incomplete Data via the EM Algorithm (1977)](http://web.mit.edu/6.435/www/Dempster77.pdf).
 In this seminal paper, Dempster, Laird and Rubin introduce the Expectation-Maximisation (EM) algorithm to obtain maximum likelihood estimates in models with latent variables and other missing data situations. 
 
-4. [Optimization by Simulated Annealing (1983)](https://science.sciencemag.org/content/sci/220/4598/671.full.pdf?casa_token=l4X_4ng3VyEAAAAA:JQwegbBrAsM8upy2ri9fM5fL80C27ZOaV-T3ZN845y0O0rlRMWH46u90xGZEet5M3p7bKarfiU1Yy1o). Scott Kirkpatrick and colaborators are one of the many groups credited with the invention of the simulated annealing (SA) method. This paper showcases the application of SA to the famou(usly) NP-hard travelling salesman problem. 
+4. [Optimization by Simulated Annealing (1983)](https://science.sciencemag.org/content/sci/220/4598/671.full.pdf?casa_token=l4X_4ng3VyEAAAAA:JQwegbBrAsM8upy2ri9fM5fL80C27ZOaV-T3ZN845y0O0rlRMWH46u90xGZEet5M3p7bKarfiU1Yy1o). Scott Kirkpatrick and colaborators are one of the many groups credited with the invention of the simulated annealing (SA) method. This paper showcases the application of SA to the famous(ly) NP-hard travelling salesman problem. 
 
 5. [Stochastic Relaxation, Gibbs Distributions, and the Bayesian Restoration of Images (1984)](http://www.cis.jhu.edu/publications/papers_in_database/GEMAN/GemanPAMI84.pdf). The famous Gibbs sampler was conceived by the Geman brothers in a situation where sampling from the whole target was a nightmare, but sampling from each conditional distribution was relatively easy. One of the working horses of computational statistics to this day.
 
