@@ -58,7 +58,8 @@ See, for instance, [On the Bogosity of MCMC Diagnostics](http://users.stat.umn.e
 
 
 ## Optmisation
-
+#### The EM algortithm 
+- This elementary [tutorial](https://zhwa.github.io/tutorial-of-em-algorithm.html)  is simple but effective.
 - The book [The EM algorithm and Extensions](https://books.google.com.br/books?hl=en&lr=&id=NBawzaWoWa8C&oi=fnd&pg=PR3&dq=The+EM+algorithm+and+Extensions&ots=tp68LOYAvP&sig=iCEMt5YUIMToTSESxLctWcob8VM#v=onepage&q=The%20EM%20algorithm%20and%20Extensions&f=false) is a well-cited resource.
 - [Monte Carlo EM](https://github.com/bob-carpenter/case-studies/blob/master/monte-carlo-em/mcem.pdf) by Bob Carpenter (Columbia).
 
