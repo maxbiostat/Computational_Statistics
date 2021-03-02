@@ -15,6 +15,8 @@ As complementary material,
 Other materials, including lecture notes and slides may be posted here as the course progresses. 
 
 [Here](https://github.com/maxbiostat/Computational_Statistics/blob/master/annotated_bibliography.md) you can find a nascent annotated bibliography with landmark papers in the field. 
+[This](http://hedibert.org/wp-content/uploads/2021/02/MC-MCMC-references.pdf) review paper by Professor Hedibert Lopes is far better than anything I could conjure, however. 
+
 
 ## Books
 
