@@ -57,7 +57,7 @@ Some other material I mentioned during class:
 
 - Charlie Geyer's [website](http://users.stat.umn.edu/~geyer/) is a treasure trove of material on Statistics in general, MCMC methods in particular. 
 See, for instance, [On the Bogosity of MCMC Diagnostics](http://users.stat.umn.edu/~geyer/mcmc/diag.html). 
-
+- [Efficient construction of reversible jump Markov chain Monte Carlo proposal distributions](http://www2.stat.duke.edu/~scs/Courses/Stat376/Papers/TransdimMCMC/BrooksRobertsRJ.pdf) is nice paper on the construction of efficient proposals for reversible jump/transdimensional MCMC.
 
 ## Optmisation
 #### The EM algortithm 
