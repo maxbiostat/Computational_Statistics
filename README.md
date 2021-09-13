@@ -32,21 +32,6 @@ Books marked with [a] are advanced material.
 - [a] Nummelin, E. (2004). [General irreducible Markov chains and non-negative operators](https://www.cambridge.org/core/books/general-irreducible-markov-chains-and-nonnegative-operators/0557D49C011AA90B761FC854D5C14983) (Vol. 83). Cambridge University Press.
 
 
-
-## Interlude: Bayesian Statistics
-
-Reference books are 
-
-- Bernardo, J. M., & Smith, A. F. (2009). [Bayesian Theory](https://statisticalsupportandresearch.files.wordpress.com/2019/03/josc3a9-m.-bernardo-adrian-f.-m.-smith-bayesian-theory-wiley-1994.pdf)  (Vol. 405). John Wiley & Sons. (PS: link is to the 1994 edition).
-- Robert, C. (2007). [The Bayesian Choice](https://errorstatistics.files.wordpress.com/2016/03/robert-20071.pdf). Springer-Verlag.
-- Jaynes, E. T. (2003). Probability theory: The logic of science. Cambridge university press.
-
-Some other material I mentioned during class:
-
-- [This](https://normaldeviate.wordpress.com/2012/11/17/what-is-bayesianfrequentist-inference/) is the [Larry Wasserman](http://www.stat.cmu.edu/~larry/) blog post I discussed. 
-- The vignette I mentioned is [here](https://cran.r-project.org/web/packages/LaplacesDemon/vignettes/BayesianInference.pdf).
-
-
 ## Simulation
 
 - [Random Number Generation](https://www.iro.umontreal.ca/~lecuyer/myftp/papers/handstat.pdf) by [Pierre L'Ecuyer](http://www-labs.iro.umontreal.ca/~lecuyer/);
