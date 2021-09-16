@@ -14,7 +14,7 @@
 \begin{document}
 \maketitle
 
-\textbf{Hand-in date: 06/11/2020.}
+\textbf{Hand-in date: 06/10/2020.}
 
 \section*{General guidance}
 \begin{itemize}
@@ -34,14 +34,14 @@ A large portion of the content of this course is concerned with computing high-d
 Today you will be introduced to a simple-looking problem with a complicated closed-form solution and one we can approach using simulation.
 
 Suppose you have a disc $C_R$ of radius $R$. 
-Take $p, q \in C_R$ two points in the disc.  
-Consider the Euclidean distance between $p$  and $q$, $||p-q|| = \sqrt{(p-q)^2} = |p-q|$.
+Take $p = (p_x, p_y)$ and $ q = (q_x, q_y) \in C_R$ two points in the disc.  
+Consider the Euclidean distance between $p$  and $q$, $||p-q|| = \sqrt{(p_x-q_x)^2 + (p_y-q_y)^2} = |p-q|$.
 \paragraph{Problem A:} What is the \textit{average} distance between pairs of points in $C_R$ if they are picked uniformly at random?
 
 \section*{Questions}
 
 \begin{enumerate}
- \item To start building intuition, let's solve a related by much simpler problem.
+ \item To start building intuition, let's solve a related but much simpler problem.
  Consider an interval $[0, s]$, with $s>0$ and take $x_1,x_2 \in [0, s]$~\textit{uniformly at random}.
  Show that the average distance between $x_1$ and $x_2$ is $s/3$.
  \item Show that Problem A is equivalent to computing
@@ -49,6 +49,8 @@ Consider the Euclidean distance between $p$  and $q$, $||p-q|| = \sqrt{(p-q)^2} 
   I = \frac{1}{\pi^2 R^4}\int_{0}^{R}\int_{0}^{R}\int_{0}^{2\pi}\int_{0}^{2\pi}\sqrt{r_1^2 + r_2^2 - 2r_1r_2\cos\phi(\theta_1, \theta_2)}\,d\theta_1\,d\theta_2\,dr_1\,dr_2,
  \end{equation*}
  where $\phi(\theta_1, \theta_2)$ is the central angle between $r_1$ and $r_2$.
+ 
+ \textit{Hint:} Draw a picture.
  \item Compute $I$ in closed-form.
 
  \textit{Hint:} Look up \textit{Crofton's mean value theorem} or \textit{Crofton's formula}. 
