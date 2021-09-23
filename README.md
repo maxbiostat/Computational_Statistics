@@ -36,6 +36,7 @@ Books marked with [a] are advanced material.
 
 - [Random Number Generation](https://www.iro.umontreal.ca/~lecuyer/myftp/papers/handstat.pdf) by [Pierre L'Ecuyer](http://www-labs.iro.umontreal.ca/~lecuyer/);
 - [Non-Uniform Random Variate Generation](http://www.nrbook.com/devroye/) by the great [Luc Devroye](http://luc.devroye.org/);
+-  Walker's [Alias method](https://en.wikipedia.org/wiki/Alias_method) is a fast way to generate discrete random variables;
 - [Rejection Control and Sequential importance sampling](http://stat.rutgers.edu/home/rongchen/publications/98JASA_rejection-control.pdf) (1998), by Liu et al. discusses how to improve importance sampling by controlling rejections.
 
 ### Markov chain Monte Carlo
