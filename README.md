@@ -62,6 +62,8 @@ See, for instance, [On the Bogosity of MCMC Diagnostics](http://users.stat.umn.e
 - In [Markov Chain Monte Carlo Maximum Likelihood](https://www.stat.umn.edu/geyer/f05/8931/c.pdf), Charlie Geyer shows how one can use MCMC to do maximum likelihood estimation when the likelihood cannot be written in closed-form.
 This paper is an example of MCMC methods being used outside of Bayesian statistics.
 
+- [This](https://github.com/maxbiostat/Computational_Statistics/blob/master/supporting_material/1997_Dunbar_CollegeMaths.pdf) paper discusses the solution of Problem A in [assigment 0 (2021)](https://github.com/maxbiostat/Computational_Statistics/blob/master/assignments/warmup_assignment.pdf).
+
 ### Extra (fun) resources
 
 In these blogs and websites you will often find interesting discussions on computational, numerical and statistical aspects of applied Statistics and Mathematics.
