@@ -39,6 +39,10 @@ Books marked with [a] are advanced material.
 -  Walker's [Alias method](https://en.wikipedia.org/wiki/Alias_method) is a fast way to generate discrete random variables;
 - [Rejection Control and Sequential importance sampling](http://stat.rutgers.edu/home/rongchen/publications/98JASA_rejection-control.pdf) (1998), by Liu et al. discusses how to improve importance sampling by controlling rejections.
 
+### Markov chains
+
+- [These](https://pages.uoregon.edu/dlevin/MARKOV/markovmixing.pdf) notes from David Levin and Yuval Peres are excellent and cover a lot of material one might find interesting on Markov processes. 
+
 ### Markov chain Monte Carlo
 
 - Charlie Geyer's [website](http://users.stat.umn.edu/~geyer/) is a treasure trove of material on Statistics in general, MCMC methods in particular. 
