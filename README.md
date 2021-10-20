@@ -49,6 +49,10 @@ Books marked with [a] are advanced material.
 See, for instance, [On the Bogosity of MCMC Diagnostics](http://users.stat.umn.edu/~geyer/mcmc/diag.html). 
 - [Efficient construction of reversible jump Markov chain Monte Carlo proposal distributions](http://www2.stat.duke.edu/~scs/Courses/Stat376/Papers/TransdimMCMC/BrooksRobertsRJ.pdf) is nice paper on the construction of efficient proposals for reversible jump/transdimensional MCMC.
 
+#### Hamiltonian Monte Carlo
+
+The two definitive texts on HMC are [Neal (2011)](https://arxiv.org/pdf/1206.1901.pdf) and [Betancourt (2017)](https://arxiv.org/pdf/1701.02434.pdf). 
+
 ## Optmisation
 #### The EM algortithm 
 - This elementary [tutorial](https://zhwa.github.io/tutorial-of-em-algorithm.html)  is simple but effective.
@@ -67,6 +71,17 @@ See, for instance, [On the Bogosity of MCMC Diagnostics](http://users.stat.umn.e
 This paper is an example of MCMC methods being used outside of Bayesian statistics.
 
 - [This](https://github.com/maxbiostat/Computational_Statistics/blob/master/supporting_material/1997_Dunbar_CollegeMaths.pdf) paper discusses the solution of Problem A in [assigment 0 (2021)](https://github.com/maxbiostat/Computational_Statistics/blob/master/assignments/warmup_assignment.pdf).
+
+#### Reparametrisation
+
+Sometimes a clever way to make a target distribution easier to compute expectations with respect to is to _reparametrise_ it. Here are some resources:
+
+- A youtube video [Introduction of the concepts and a simple example]( https://www.youtube.com/watch?v=gSd1msFFZTw); 
+- [Hamiltonian Monte Carlo for Hierarchical Models](https://arxiv.org/abs/1312.0906) from M. J. Betancourt and Mark Girolami; 
+- [A General Framework for the Parametrization of Hierarchical Models](https://projecteuclid.org/journals/statistical-science/volume-22/issue-1/A-General-Framework-for-the-Parametrization-of-Hierarchical-Models/10.1214/088342307000000014.full) from Omiros Papaspiliopoulos, Gareth O. Roberts, and Martin Sköld; 
+- [Efficient parametrisations for normal linear mixed models](https://www.jstor.org/stable/2337527?seq=1#metadata_info_tab_contents) from Alan E. Gelfand, Sujit K. Sahu and Bradley P. Carlin. 
+
+See [#4](https://github.com/maxbiostat/Computational_Statistics/issues/4). Contributed by @lucasmoschen.
 
 ### Extra (fun) resources
 
