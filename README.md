@@ -85,6 +85,8 @@ See [#4](https://github.com/maxbiostat/Computational_Statistics/issues/4). Contr
 
 ### Extra (fun) resources
 
+- A [Visualisation](https://chi-feng.github.io/mcmc-demo/app.html) of MCMC for various algorithms and targets.
+
 In these blogs and websites you will often find interesting discussions on computational, numerical and statistical aspects of applied Statistics and Mathematics.
 
 - Christian Robert's [blog](https://xianblog.wordpress.com/);
