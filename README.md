@@ -53,6 +53,10 @@ See, for instance, [On the Bogosity of MCMC Diagnostics](http://users.stat.umn.e
 
 The two definitive texts on HMC are [Neal (2011)](https://arxiv.org/pdf/1206.1901.pdf) and [Betancourt (2017)](https://arxiv.org/pdf/1701.02434.pdf). 
 
+#### Normalising Constants
+
+[This](https://radfordneal.wordpress.com/2008/08/17/the-harmonic-mean-of-the-likelihood-worst-monte-carlo-method-ever/) post by Radford Neal explains why the Harmonic Mean Estimator (HME) is a _terrible_ estimator of the evidence.
+
 ## Optmisation
 #### The EM algortithm 
 - This elementary [tutorial](https://zhwa.github.io/tutorial-of-em-algorithm.html)  is simple but effective.
