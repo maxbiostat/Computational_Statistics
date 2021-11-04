@@ -57,6 +57,11 @@ The two definitive texts on HMC are [Neal (2011)](https://arxiv.org/pdf/1206.190
 
 [This](https://radfordneal.wordpress.com/2008/08/17/the-harmonic-mean-of-the-likelihood-worst-monte-carlo-method-ever/) post by Radford Neal explains why the Harmonic Mean Estimator (HME) is a _terrible_ estimator of the evidence.
 
+#### Sequential Monte Carlo and Dynamic models
+
+- [This](https://link.springer.com/book/10.1007/978-3-030-47845-2) book by Nicolas Chopin and Omiros Papaspiliopoulos is a great introduction (as it says in the title) about SMC.
+SMC finds application in many areas, but dynamic (linear) models deserve a special mention. The seminal 1997 [book](https://link.springer.com/book/10.1007/b98971) by West and Harrison remains the _de facto_ text on the subject. 
+
 ## Optmisation
 #### The EM algortithm 
 - This elementary [tutorial](https://zhwa.github.io/tutorial-of-em-algorithm.html)  is simple but effective.
@@ -86,6 +91,10 @@ Sometimes a clever way to make a target distribution easier to compute expectati
 - [Efficient parametrisations for normal linear mixed models](https://www.jstor.org/stable/2337527?seq=1#metadata_info_tab_contents) from Alan E. Gelfand, Sujit K. Sahu and Bradley P. Carlin. 
 
 See [#4](https://github.com/maxbiostat/Computational_Statistics/issues/4). Contributed by @lucasmoschen.
+
+#### Variance reduction
+
+- [Rao-Blackwellisation](http://www.columbia.edu/~im2131/ps/rao-black.pdf) is a popular technique for obtaining estimators with lower variance. I recommend the recent International Statistical Review [article](https://arxiv.org/abs/2101.01011) by Christian Robert and Gareth Roberts on the topic. 
 
 ### Extra (fun) resources
 
