@@ -25,3 +25,5 @@ In this seminal paper, Dempster, Laird and Rubin introduce the Expectation-Maxim
 
 13. [The No-U-Turn Sampler: Adaptively Setting Path Lengths in Hamiltonian Monte Carlo (2014)](https://arxiv.org/abs/1111.4246). Matt Hoffmann and Andrew Gelman introduce a novel algorithm that tunes the step size and tree depth of the HMC algorithm automatically.
 The No-U-Turn Sampler (NUTS) as it came to christened, is the building block for what would later for the main algorithm implemented in [Stan](https://mc-stan.org/).
+
+14. In [A tutorial on adaptive MCMC](https://people.eecs.berkeley.edu/~jordan/sail/readings/andrieu-thoms.pdf), Cristophe Andrieu and Johannes Thoms give a very nice overview of the advantages and pitfalls (!) of adaptive MCMC. Pay special heed to Section 2.
