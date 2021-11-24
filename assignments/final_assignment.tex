@@ -1,0 +1,146 @@
+\documentclass[a4paper,10pt, notitlepage]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{natbib}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[shortlabels]{enumitem}
+% \usepackage[portuguese]{babel}
+
+
+% Title Page
+\title{Assignment II: Advanced simulation techniques.}
+\author{Computational Statistics \\ Instructor: Luiz Max de Carvalho}
+
+\begin{document}
+\maketitle
+
+\textbf{Hand-in date: 02/12/2021.}
+
+\section*{General guidance}
+\begin{itemize}
+ \item State and prove all non-trivial mathematical results necessary to substantiate your arguments;
+ \item Do not forget to add appropriate scholarly references~\textit{at the end} of the document;
+ \item Mathematical expressions also receive punctuation;
+ \item All computational implementations must be ``from scratch'', i.e., you may not employ a ready-made package to implement the technique in question. 
+ You may, however (a) employ pre-packaged routines for things like random variate generation and MCMC diagnostics and (b) use a package implementation against which to check your own.
+ \item Please hand in a single PDF file as your final main document.
+ Code appendices are welcome,~\textit{in addition} to the main PDF document.
+ \end{itemize}
+
+
+\section*{Background}
+
+We have by now hopefully acquired a solid theoretical understanding of simulation techniques, including Markov chain Monte Carlo (MCMC).
+In this assigment, we shall re-visit some of the main techniques in the field of Simulation.
+The goal is to broaden your knowledge of the field by implementing one of the many variations on the general theme of simulation algorithms.
+
+Each method/paper brings its own advantages and pitfalls, and each explores a slightly different aspect of Computational Statistics.
+You should pick~\textbf{one} of the listed papers and answer the associated questions.
+
+In what follows, ESS stands for effective sample size, and is similar to $n_{\text{eff}}$ we have encountered before: it measures the number of effectively uncorrelated samples in a given collection of random variates.
+
+\newpage 
+
+\section*{Paper 1: MCMC using Hamiltonian dynamics~\citep{Neal2011}}
+
+As discussed in class, as the dimensionality of the space over which integrals need to be taken grows, performance suffers massively -- this is the so-called ``curse of dimensionality''.
+In our quest to compute expectations efficiently, we might want to draw on all of the available information in order to find pockets of high probability mass. 
+
+Clever proposal mechanisms in MCMC use local information, usually in the form of gradients of the (log) target.
+In this seminal 2011 review, Radford Neal lays out a complete treatment of a technique known as Hybrid or Hamiltonian Monte Carlo  (HMC), which works by constructing a Markov chain on an augmented state-space where one considers potentials and momenta.
+
+\begin{enumerate}
+ \item Describe how to apply Hamiltonian dynamics to MCMC;
+ \item Implementation: reproduce Figure 6 of~\cite{Neal2011}
+\begin{enumerate}[(a)]
+  \item Supplement the analyses presented therein with ESS/hour computations in order to gauge the real gain of applying HMC.
+  \textit{Hint:} Use the function \verb|effectiveSize()| from the~\textbf{coda} package in R~\citep{Plummer2006};
+ \end{enumerate} 
+ \item Why does HMC avoid random walk behaviour? What advantages are there of such an algorithm?
+\end{enumerate}
+
+\section*{Paper 2: Bootstrap~\citep{Efron1986}}
+
+In orthodox (frequentist) Statistics, it is common to want to ascertain long run (frequency) properties of estimators, including coverage of confidence intervals and standard errors.
+Unfortunately, for the models of interest in actual practice, constructing confidence intervals directly (exactly) is difficult.
+The bootstrap method is a re-sampling technique that allows for a simple yet theoretically grounded way of constructing confidence intervals and assessing standard errors in quite complex situations.
+
+For this assigment, you are encouraged to consult the seminal 1986 review by stellar statisticians Bradley Efron and Robert Tibshirani~\citep{Efron1986}.
+
+\textit{Hint:} Brush off on your Normal theory before delving in.
+The book by~\cite{Schervish2012} -- specially Chapter 5 -- is a great resource.
+
+\begin{enumerate}
+ \item Define and explain the bootstrap technique;
+ \item Define and explain the jackknife technique;
+ \item Implementation:
+\begin{enumerate}[(a)]
+   \item Reproduce the results in Table I of~\cite{Efron1986};
+   \item Show what happens if one increases/decreases the value of $B$;
+ \end{enumerate} 
+ \item Why is it important to draw exactly $n$ samples in each bootstrap iteration? Can this be relaxed?
+ \item (bonus) Propose an alternative bootstrap method to the one proposed in the paper and discuss the situations where the new method is expected to perform better.
+\end{enumerate}
+
+\section*{Paper 3: Blocked Gibbs sampling~\citep{Tan2009}}
+
+The so-called Gibbs sampler is a work horse of Computational Statistics.
+It depends on decomposing a target distribution into conditional densities from which new values of a given coordinate can be drawn.
+
+One of the difficulties one might encounter with the Gibbs sampler is that it might be slow to converge, specially in highly-correlated targets.
+In Statistics, multilevel models (also called hierarchical or random effects) are extremely useful in modelling data coming from stratified structures (e.g. individuals within a city and cities within a state) and typically present highly correlated posterior distributions.
+
+One way to counteract the correlation between coordinates in the Gibbs sampler is to~\textbf{block} them together, and sample correlated coordinates jointly.
+
+For this assigment you are referred to the 2009~\textit{Journal of Computational and Graphical Statistics} paper by Tan and Hobert~\citep{Tan2009}.
+
+\begin{enumerate}
+ \item Precisely describe the so-called blocked Gibbs sampler;
+ \textit{Hint:} you do not need to describe theoretical properties of the algorithm given in this paper; a general description of the algorithm should suffice. 
+ \item Explain the advantages -- both theoretical and practical -- of a clever blocking scheme;
+ \item Would it be possible to apply the ``simple'' Gibbs sampler in this example? Why?
+ \item Implementation:
+ \begin{enumerate}[(a)]
+  \item Implement the blocked Gibbs sampler discussed in the paper in order to fit the model of Section 1 of~\cite{Tan2009} to the data described in Section 5 therein.
+  \item Assess convergence (or lack thereof) and mixing of the resulting chain.
+  \item Confirm your results agree with those given by the original authors up to Monte Carlo error.
+ \end{enumerate}  
+ \item Comment on the significance of geometric ergodicity for the blocked Gibbs sampler proposed by~\cite{Tan2009}.
+\end{enumerate}
+
+\section*{Paper 4: Approximate Bayesian computation~\citep{Beaumont2002}}
+
+Bayesian inference relies on computing a posterior distribution of a set of unknowns, $\boldsymbol{\theta}$ conditional on the observed data, $\boldsymbol{x}$.
+This posterior distribution, $p(\boldsymbol{\theta} \mid \boldsymbol{x})$, is proportional to a likelihood function times a prior distribution, i.e.,
+\begin{equation}
+ \label{eq:posterior}
+ p(\boldsymbol{\theta} \mid \boldsymbol{x}) \propto l(\boldsymbol{x} \mid \boldsymbol{\theta})\pi(\boldsymbol{\theta}).
+\end{equation}
+ 
+In many situations, however, our models are so complex that the likelihood function in~(\ref{eq:posterior}) might be either very costly to compute or computationally intractable. 
+Examples of models which fall onto this class include Epidemiological models, Population Genetics models and Gibbs random fields.
+
+In such cases, one can use the so-called likelihood-free methods, which either replace the ``true'' likelihood function with a surrogate or eschew computing it altogether.
+The so-called Approximate Bayesian Computation (ABC) class of algorithms has enjoyed great success in recent years because it allows inference about very complex stochastic models that are inaccessible to other methods.
+
+\textit{Hint:} I strongly suggest you consult the recent review of~\cite{Beaumont2019} for extra details. 
+\begin{enumerate}
+ \item Describe the (basic) ABC rejection algorithm;
+ \item Implementation:
+\begin{enumerate}[(a)]
+  \item Suppose one has data $\boldsymbol{x} = (x_1, x_2, \ldots, x_n)$ on a binary outcome, i.e., $x_i \in \{0, 1\}$.
+  Suppose further we choose to model these data as independent $x_i \sim \operatorname{Bernoulli}(\theta)$ and pick a Beta prior for $\theta$ with hyperparameters $\alpha>0$ and $\beta>0$.  
+  Implement an ABC scheme to sample (approximately) from the corresponding posterior, $p(\theta \mid \boldsymbol{x})$.
+  \item Implement a Metropolis-Hastings scheme to sample from $p(\theta \mid \boldsymbol{x})$;
+  \item Compare the results of the previous two items to the exact posterior distribution (we derived this in class): how well does ABC fare for a range of true values of $\theta$? 
+  Does performance change if one changes the sample size ($n$)?
+ \end{enumerate} 
+ \item Is it possible to employ improper priors with ABC?\footnote{Recall that a prior distribution, $\pi(\theta)$ is said to be~\textit{improper} if $\int_{\Theta} \pi(t)\,d\mu(t) = \infty$.}
+ \item What is the role of sufficient statistics in ABC? 
+ \textit{Hint:} Take a look at~\cite{Robert2011}.
+\end{enumerate}
+ 
+\bibliographystyle{apalike}
+\bibliography{stat_comp}
+
+\end{document}          
