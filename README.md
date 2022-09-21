@@ -34,7 +34,7 @@ Books marked with [a] are advanced material.
 
 ## News
 
-- 2022-09-21: We have a new small warmup [assigment](https://github.com/maxbiostat/Computational_Statistics/blob/master/assignments/simulation_extra_assignment.pdf) hand-in date: 2022-09-28.
+- 2022-09-21: We have a new small warmup [assigment](https://github.com/maxbiostat/Computational_Statistics/blob/master/assignments/simulation_extra_assignment.pdf) hand-in date: **2022-09-28**.
 
 
 ## Simulation
