@@ -1,0 +1,53 @@
+\documentclass[a4paper,10pt, notitlepage]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{natbib}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[shortlabels]{enumitem}
+
+% Title Page
+\title{Extra assignment 0: Who's that (simulated) pokémon?}
+\author{Computational Statistics \\ Instructor: Luiz Max  Carvalho}
+
+\begin{document}
+\maketitle
+
+\textbf{Hand-in date: 28/09/2022.}
+
+\section*{General guidance}
+\begin{itemize}
+ \item State and prove all non-trivial mathematical results necessary to substantiate your arguments;
+ \item Do not forget to add appropriate scholarly references~\textit{at the end} of the document;
+ \item Mathematical expressions also receive punctuation;
+ \item Please hand in a single PDF file as your final main document.
+ 
+ Code appendices are welcome,~\textit{in addition} to the main PDF document.
+ \end{itemize}
+
+\section*{Background}
+
+In this (hopefully) fun little exercise I will describe a rejection sampling algorithm to sample from a mysterious distribution.
+Suppose we have the following procedure:
+\begin{enumerate}
+    \item Generate $U_1, U_2 \sim \operatorname{Uniform}(0, 1)$, independently;
+    \item Compute $Y_1 = -\log(U1)$ and $Y_1 = -\log(U1)$.
+    If $Y_2 > \frac{(1-Y_1)^2}{2}$, accept $Y = (Y_1, Y_2)$.
+    Else, reject and return to step 1;
+    \item Generate $U_3 \sim \operatorname{Uniform}(0, 1)$; if $U_3 < 1/2$, set $X = Y_1$, otherwise set $X = -Y_1$.
+\end{enumerate}
+
+Your job is to analyse this algorithm mathematically, find out its target distribution and work out its acceptance rate. 
+
+\newpage
+
+\section*{Questions}
+
+\begin{enumerate}
+ \item What is the distribution of $Y_1$ and $Y_2$?
+ \item What is the distribution of the ``mystery'' random variate $X$? 
+ \item How can one take the output of the algorithm ($X$) and generate $W \sim \operatorname{Normal}(\mu, \sigma^2)$, with $\mu \in \mathbb{R}$ and $\sigma^2 \in \mathbb{R}_+$?
+ \item Can you work out what the acceptance rate of this algorithm is?
+ \item (bonus) Can you generalise this algorithm to sample from other distributions? For example, how would you modify the algorithm in order to sample from a Gamma distribution with parameters $a, b \in \mathbb{R}_+$?
+ 
+ \textbf{Hint:} consider modifying step 2) to accept when $Y_2 > f(Y_1)$ and choose $f$ carefully.
+\end{enumerate}
