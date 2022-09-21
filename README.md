@@ -32,6 +32,11 @@ Books marked with [a] are advanced material.
 - [a] Nummelin, E. (2004). [General irreducible Markov chains and non-negative operators](https://www.cambridge.org/core/books/general-irreducible-markov-chains-and-nonnegative-operators/0557D49C011AA90B761FC854D5C14983) (Vol. 83). Cambridge University Press.
 
 
+## News
+
+- 2022-09-21: We have a new small warmup [assigment](https://github.com/maxbiostat/Computational_Statistics/blob/master/assignments/simulation_extra_assignment.pdf) hand-in date: 2022-09-28.
+
+
 ## Simulation
 
 - [Random Number Generation](https://www.iro.umontreal.ca/~lecuyer/myftp/papers/handstat.pdf) by [Pierre L'Ecuyer](http://www-labs.iro.umontreal.ca/~lecuyer/);
