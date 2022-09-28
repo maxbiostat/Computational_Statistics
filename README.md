@@ -34,7 +34,8 @@ Books marked with [a] are advanced material.
 
 ## News
 
-- 2022-09-21: We have a new small warmup [assigment](https://github.com/maxbiostat/Computational_Statistics/blob/master/assignments/simulation_extra_assignment.pdf). Hand-in date: **2022-09-28**.
+- 2022-09-28: We have an [assigment](https://github.com/maxbiostat/Computational_Statistics/blob/master/assignments/assignment_I.pdf) on Rao-Blackwellisation.
+Hand-in date: **2022-10-05**.
 
 
 ## Simulation
