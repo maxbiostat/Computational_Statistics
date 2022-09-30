@@ -8,7 +8,7 @@ Course materials for Computational Statistics, a PhD-level course at [EMAp](http
 
 As complementary material,
 
-- These lecture [notes](https://statweb.stanford.edu/~susan/courses/s227/)  by stellar statistician [Susan Holmes](https://statweb.stanford.edu/~susan/) are also well worth taking a look.
+- These lecture [notes](https://web.archive.org/web/20131215003910/https://statweb.stanford.edu/~susan/courses/s227/)  by stellar statistician [Susan Holmes](https://statweb.stanford.edu/~susan/) are also well worth taking a look.
 
 - [Monte Carlo theory, methods and examples](https://statweb.stanford.edu/~owen/mc/) by [Professor Art Owen](https://statweb.stanford.edu/~owen/), gives a nice and complete treatment of all the topics on simulation, including a whole chapter on variance reduction. 
 
