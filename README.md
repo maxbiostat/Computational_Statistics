@@ -34,8 +34,8 @@ Books marked with [a] are advanced material.
 
 ## News
 
-- 2022-09-28: We have an [assigment](https://github.com/maxbiostat/Computational_Statistics/blob/master/assignments/assignment_I.pdf) on Rao-Blackwellisation.
-Hand-in date: **2022-10-05**.
+- 2022-10-18: We have the first marked [assigment](https://github.com/maxbiostat/Computational_Statistics/blob/master/assignments/CompStats_T1_2022.pdf) on computing the average distance between two points on a disk.
+Hand-in date: **2022-11-16**.
 
 
 ## Simulation
