@@ -34,8 +34,9 @@ Books marked with [a] are advanced material.
 
 ## News
 
-- 2022-10-18: We have the first marked [assigment](https://github.com/maxbiostat/Computational_Statistics/blob/master/assignments/CompStats_T1_2022.pdf) on computing the average distance between two points on a disk.
-Hand-in date: **2022-11-16**. Random assignments of methods to students are [here](https://github.com/maxbiostat/Computational_Statistics/blob/master/assignments/student_suggestions.md).
+- 2022-11-30: We have the second (and final) marked [assigment](https://github.com/maxbiostat/Computational_Statistics/blob/master/assignments/final_assignment.pdf) on a few interesting papers in Simulation Methods.
+
+Hand-in date: **2022-12-15**. Random assignments of methods to students are [here](https://github.com/maxbiostat/Computational_Statistics/blob/master/assignments/student_suggestions.md).
 
 
 ## Simulation
