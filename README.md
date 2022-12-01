@@ -59,7 +59,7 @@ See, for instance, [On the Bogosity of MCMC Diagnostics](http://users.stat.umn.e
 #### Hamiltonian Monte Carlo
 
 The two definitive texts on HMC are [Neal (2011)](https://arxiv.org/pdf/1206.1901.pdf) and [Betancourt (2017)](https://arxiv.org/pdf/1701.02434.pdf). 
-A nice set of notes is [Vishnoi (2021)](https://arxiv.org/pdf/2108.12107.pdf). 
+A nice set of notes is [Vishnoi (2021)](https://arxiv.org/pdf/2108.12107.pdf). Moreover, [Hoffman & Gelman (2014)](https://jmlr.org/papers/volume15/hoffman14a/hoffman14a.pdf) describes the No-U-turn sampler. 
 
 #### Normalising Constants
 
