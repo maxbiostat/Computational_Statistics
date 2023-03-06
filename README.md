@@ -34,11 +34,6 @@ Books marked with [a] are advanced material.
 
 ## News
 
-- 2022-11-30: We have the second (and final) marked [assigment](https://github.com/maxbiostat/Computational_Statistics/blob/master/assignments/final_assignment.pdf) on a few interesting papers in Simulation Methods.
-
-Hand-in date: **2022-12-15**. Random assignments of methods to students are [here](https://github.com/maxbiostat/Computational_Statistics/blob/master/assignments/student_suggestions.md).
-
-
 ## Simulation
 
 - [Random Number Generation](https://www.iro.umontreal.ca/~lecuyer/myftp/papers/handstat.pdf) by [Pierre L'Ecuyer](http://www-labs.iro.umontreal.ca/~lecuyer/);
