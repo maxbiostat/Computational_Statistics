@@ -34,6 +34,8 @@ Books marked with [a] are advanced material.
 
 ## News
 
+An assigment on compositional sampling and variance reduction is now [here](https://github.com/maxbiostat/Computational_Statistics/blob/master/assigments/assignment_0.pdf). 
+
 ## Simulation
 
 - [Random Number Generation](https://www.iro.umontreal.ca/~lecuyer/myftp/papers/handstat.pdf) by [Pierre L'Ecuyer](http://www-labs.iro.umontreal.ca/~lecuyer/);
