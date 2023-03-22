@@ -79,7 +79,7 @@ SMC finds application in many areas, but dynamic (linear) models deserve a speci
 
 - [Efron (1979)](https://projecteuclid.org/journals/annals-of-statistics/volume-7/issue-1/Bootstrap-Methods-Another-Look-at-the-Jackknife/10.1214/aos/1176344552.full) is a great resource and a seminal paper.
 - A good introductory book is [An introduction to the bootstrap](https://www.routledge.com/An-Introduction-to-the-Bootstrap/Efron-Tibshirani/p/book/9780412042317) by Efron and Tibshirani (1993). [PDF](https://cindy.informatik.uni-bremen.de/cosy/teaching/CM_2011/Eval3/pe_efron_93.pdf).
-- The technical justification of the bootstrap relies on the [Glivenko-Cantelli](https://en.wikipedia.org/wiki/Glivenko%E2%80%93Cantelli_theorem) theorem. The technical proof given in class is taken from [here](http://www.ms.uky.edu/~mai/sta709/NoteGC.pdf).
+- The technical justification of the bootstrap relies on the [Glivenko-Cantelli](https://en.wikipedia.org/wiki/Glivenko%E2%80%93Cantelli_theorem) theorem. The proof given in class is taken from [here](http://www.ms.uky.edu/~mai/sta709/NoteGC.pdf).
 
 ## Miscellanea
 
