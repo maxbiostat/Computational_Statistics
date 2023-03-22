@@ -28,7 +28,7 @@ Books marked with [a] are advanced material.
 
 **Supplementary**
 - Givens, G. H., & Hoeting, J. A. (2012). [Computational Statistics](https://www.stat.colostate.edu/computationalstatistics/) (Vol. 710). John Wiley & Sons.
-- [a] Meyn, S. P., & Tweedie, R. L. (2012). [Markov chains and stochastic stability](https://www.springer.com/gp/book/9781447132691). Springer Science & Business Media.
+- [a] Meyn, S. P., & Tweedie, R. L. (2012). [Markov chains and stochastic stability](https://www.springer.com/gp/book/9781447132691). Springer Science & Business Media. [[PDF](http://probability.ca/MT/BOOK.pdf)].
 - [a] Nummelin, E. (2004). [General irreducible Markov chains and non-negative operators](https://www.cambridge.org/core/books/general-irreducible-markov-chains-and-nonnegative-operators/0557D49C011AA90B761FC854D5C14983) (Vol. 83). Cambridge University Press.
 
 
