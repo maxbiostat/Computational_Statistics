@@ -42,6 +42,7 @@ An assigment on compositional sampling and variance reduction is now [here](http
 - [Non-Uniform Random Variate Generation](http://www.nrbook.com/devroye/) by the great [Luc Devroye](http://luc.devroye.org/);
 -  Walker's [Alias method](https://en.wikipedia.org/wiki/Alias_method) is a fast way to generate discrete random variables;
 - [Rejection Control and Sequential importance sampling](http://stat.rutgers.edu/home/rongchen/publications/98JASA_rejection-control.pdf) (1998), by Liu et al. discusses how to improve importance sampling by controlling rejections.
+- [This](https://doi.org/10.1214/18-STS676) is a nice general comment about the role of simulation in numerical integration.
 
 ### Markov chains
 
