@@ -1,0 +1,102 @@
+\documentclass[a4paper,10pt, notitlepage]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{natbib}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[shortlabels]{enumitem}
+
+\newcommand{\pr}{\operatorname{Pr}} %% probability
+\newcommand{\vr}{\operatorname{Var}} %% variance
+\newcommand{\bX}{ \boldsymbol{X}} %% design matrix,
+\newcommand{\by}{ \boldsymbol{y} } %%  observed outcomes,
+\newcommand{\bb}{ \boldsymbol{\beta} }
+\newcommand{\ba}{ \boldsymbol{A} }
+
+% Title Page
+\title{Assignment 1: Gibbs samplers for conjugate Bayesian analysis}
+\author{Class \\ Instructor: Luiz Max de Carvalho}
+
+\begin{document}
+\maketitle
+
+\textbf{Hand-in date: 24/05/23.}
+
+\section*{General guidance}
+\begin{itemize}
+ \item State and prove all non-trivial mathematical results necessary to substantiate your arguments;
+ \item Do not forget to add appropriate scholarly references~\textit{at the end} of the document;
+ \item Mathematical expressions also receive punctuation;
+ \item Please hand in a single PDF file as your final main document.
+ 
+ Code appendices are welcome,~\textit{in addition} to the main PDF document.
+ \end{itemize}
+
+\newpage
+
+\section*{Background}
+Linear regression is a work-horse of modern Statistics.
+Its wide applicability, robustness to violations of assumptions and ease of interpretation are major assets. 
+In this assignment we will consider 
+Consider some data $\by \in \mathbb{R}^n$, along with a $n \times P$ matrix of covariates $\boldsymbol{X}$.
+Now, consider the following model for $\boldsymbol{y}$:
+\begin{align*}
+    \by \mid \bX, \bb, \ba & \sim \operatorname{Normal}\left(\bX \bb, \ba\right),\\
+\end{align*}
+where $\bb \in \mathbb{R}^P$ is a vector of coefficients and  $\ba$ is a $P \times P$ positive-definite \textbf{covariance matrix}.
+Note that this implies that $E[\by] = \bX\bb + \boldsymbol{\epsilon}$.
+To facilitate things, we will assume conditional independence \footnote{Also known as assuming the errors are conditionally not autocorrelated.}, i.e.,
+\begin{align*}
+        \vr \left( \boldsymbol{\epsilon} \mid \bX \right) &= E \left[\boldsymbol{\epsilon} \boldsymbol{\epsilon}^T \mid \bX \right], \\
+    &=  \begin{bmatrix}
+   \sigma^2_{1} & 0& \ldots & 0\\ 
+   0 & \sigma^2_{2} & \ldots &0\\ 
+   \vdots & \vdots &  \ddots & \vdots \\ 
+   0&  0 &  \ldots & \sigma^2_{n}
+ \end{bmatrix} = \sigma^2 \begin{bmatrix}
+   w_{1} & 0& \ldots & 0\\ 
+   0 & w_{2} & \ldots &0\\ 
+   \vdots & \vdots &  \ddots & \vdots \\ 
+   0&  0 &  \ldots & w_{n}
+ \end{bmatrix}.
+\end{align*}
+Here, $\theta = (\bb, \ba)$ are the unknown quantities in the model.
+We will assign the following joint prior structure to $\theta$:
+\begin{align*}
+        \bb \mid \ba & \sim \operatorname{Normal}\left(\boldsymbol{m}_0, \kappa \ba\right),\\
+    \ba &\sim \operatorname{Inverse-Wishart}(\boldsymbol{V}_0, a_0),
+\end{align*}
+where $\boldsymbol{V}_0$ is a $P \times P$ scale matrix and $a_0 > P- 1$ is a scalar encoding the prior degrees of freedom.
+\section*{Questions}
+
+\begin{enumerate}
+ \item Consider the posterior distribution
+ \begin{equation*}
+     p\left(\bb, \ba \mid \bX, \by \right) \propto f\left(\by \mid \bb, \ba, \bX \right)\pi\left(\bb, \ba\right).
+ \end{equation*}
+ Deduce the full conditional distribution of
+ \begin{enumerate}
+     \item Each component of $\bb$, $\beta_j$;
+     \item The vector of coefficients $\bb$;
+     \item The covariance matrix $\ba$;
+ \end{enumerate}
+ \item From the previous calculations, show how to sample from $p\left(\bb, \ba \mid \bX, \by \right)$ using\footnote{Remember to prove that the algorithm you are proposing is actually a Gibbs sampler!} 
+ \begin{enumerate}
+     \item A Gibbs sampler that updates each $\beta_j$ individually;
+     \item A Gibbs sampler that updates $\bb$ as whole.
+ \end{enumerate}
+ \item Discuss the theoretical characteristics of the samplers in the previous item: are they ergodic? Are they geometrically ergodic? Can you give a rate?
+ \item Evaluate both samplers empirically; which one would you recommend? Do your findings agree with the theory? Which diagnostics/measures of efficiency did you choose and why?
+
+\textbf{Hint:} You are going to need some data for this. If you do not have a favourite data set, consider generating a synthetic one.
+ 
+ \item Using the best algorithm you could construct, show how to produce samples from the posterior predictive
+\begin{equation*}
+    \tilde{p}(\tilde{y} \mid \boldsymbol{y}, \bX) = \int_{\boldsymbol{\Theta}} f(\by \mid \theta) p(\theta \mid \by, \bX)\,d\theta.
+\end{equation*}
+ \textit{Hint:} Look at this density like the expectation that it is.
+ \end{enumerate}
+% 
+% \bibliographystyle{apalike}
+% \bibliography{refs}
+
+\end{document}          
