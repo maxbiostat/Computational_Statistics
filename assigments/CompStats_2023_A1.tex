@@ -91,7 +91,7 @@ where $\boldsymbol{V}_0$ is a $P \times P$ scale matrix and $a_0 > P- 1$ is a sc
  
  \item Using the best algorithm you could construct, show how to produce samples from the posterior predictive
 \begin{equation*}
-    \tilde{p}(\tilde{y} \mid \boldsymbol{y}, \bX) = \int_{\boldsymbol{\Theta}} f(\by \mid \theta) p(\theta \mid \by, \bX)\,d\theta.
+    \tilde{p}(\tilde{y} \mid \boldsymbol{y}, \bX, \tilde{\bX}) = \int_{\boldsymbol{\Theta}} f(\by \mid \tilde{\bX}, \theta) p(\theta \mid \by, \bX)\,d\theta.
 \end{equation*}
  \textit{Hint:} Look at this density like the expectation that it is.
  \end{enumerate}
@@ -100,3 +100,4 @@ where $\boldsymbol{V}_0$ is a $P \times P$ scale matrix and $a_0 > P- 1$ is a sc
 % \bibliography{refs}
 
 \end{document}          
+
