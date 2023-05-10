@@ -34,7 +34,8 @@ Books marked with [a] are advanced material.
 
 ## News
 
-An assigment on Gibbs samplers for linear regression with heterokedasticity under conjugate priors is now [available](https://github.com/maxbiostat/Computational_Statistics/blob/master/assigments/CompStats2023_A1.pdf). 
+An assigment on Gibbs samplers for linear regression with heterokedasticity under conjugate priors is now [available](https://github.com/maxbiostat/Computational_Statistics/blob/master/assigments/CompStats_2023_A1.pdf).
+
 
 ## Simulation
 
