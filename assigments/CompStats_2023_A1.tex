@@ -19,7 +19,7 @@
 \begin{document}
 \maketitle
 
-\textbf{Hand-in date: 24/05/23.}
+\textbf{Hand-in date: 07/06/23.}
 
 \section*{General guidance}
 \begin{itemize}
@@ -42,11 +42,23 @@ Now, consider the following model for $\boldsymbol{y}$:
 \begin{align*}
     \by \mid \bX, \bb, \ba & \sim \operatorname{Normal}\left(\bX \bb, \ba\right),\\
 \end{align*}
-where $\bb \in \mathbb{R}^P$ is a vector of coefficients and  $\ba$ is a $P \times P$ positive-definite \textbf{covariance matrix}.
-Note that this implies that $E[\by] = \bX\bb + \boldsymbol{\epsilon}$.
-To facilitate things, we will assume conditional independence \footnote{Also known as assuming the errors are conditionally not autocorrelated.}, i.e.,
+where $\bb \in \mathbb{R}^P$ is a vector of coefficients and  $\ba$ is a $n \times n$ positive-definite \textbf{covariance matrix}.
+Note that this implies that $E_{\boldsymbol{\beta}}[\by] = \bX\bb$ and $\by = \bX\bb + \boldsymbol{\epsilon}$ with
+\begin{equation*}
+    \boldsymbol{\epsilon} \sim \operatorname{Normal}(\boldsymbol{0}, \ba).
+\end{equation*}
+
+Here, $\theta = (\bb, \ba)$ are the unknown quantities in the model.
+We will assign the following joint prior structure to $\theta$:
 \begin{align*}
-        \vr \left( \boldsymbol{\epsilon} \mid \bX \right) &= E \left[\boldsymbol{\epsilon} \boldsymbol{\epsilon}^T \mid \bX \right], \\
+        \bb \mid \bX, \ba & \sim \operatorname{Normal}\left(\boldsymbol{m}_0, \kappa \left(\bX^T \ba^{-1} \bX \right)^{-1}\right),\\
+    \ba &\sim \operatorname{Inverse-Wishart}(\boldsymbol{V}_0, a_0),
+\end{align*}
+where $\boldsymbol{V}_0$ is a $n \times n$ scale matrix and $a_0 >  n - 1$ is a scalar encoding the prior degrees of freedom.
+
+\textbf{Hint:} \underline{If} you are confused about how to specify $\boldsymbol{V}_0$, a good starting point might be to assume conditional independence \footnote{Also known as assuming the errors are conditionally not autocorrelated.} \underline{\textit{ a priori}}, i.e.,
+\begin{align*}
+               \boldsymbol{V}_0
     &=  \begin{bmatrix}
    \sigma^2_{1} & 0& \ldots & 0\\ 
    0 & \sigma^2_{2} & \ldots &0\\ 
@@ -57,15 +69,9 @@ To facilitate things, we will assume conditional independence \footnote{Also kno
    0 & w_{2} & \ldots &0\\ 
    \vdots & \vdots &  \ddots & \vdots \\ 
    0&  0 &  \ldots & w_{n}
- \end{bmatrix}.
+ \end{bmatrix},
 \end{align*}
-Here, $\theta = (\bb, \ba)$ are the unknown quantities in the model.
-We will assign the following joint prior structure to $\theta$:
-\begin{align*}
-        \bb \mid \ba & \sim \operatorname{Normal}\left(\boldsymbol{m}_0, \kappa \ba\right),\\
-    \ba &\sim \operatorname{Inverse-Wishart}(\boldsymbol{V}_0, a_0),
-\end{align*}
-where $\boldsymbol{V}_0$ is a $P \times P$ scale matrix and $a_0 > P- 1$ is a scalar encoding the prior degrees of freedom.
+where $\boldsymbol{w} = \{w_1, \ldots w_n\}$ and $\sigma^2$ are hyperparameters that need to be specified. 
 \section*{Questions}
 
 \begin{enumerate}
