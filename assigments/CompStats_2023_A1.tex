@@ -51,10 +51,10 @@ Note that this implies that $E_{\boldsymbol{\beta}}[\by] = \bX\bb$ and $\by = \b
 Here, $\theta = (\bb, \ba)$ are the unknown quantities in the model.
 We will assign the following joint prior structure to $\theta$:
 \begin{align*}
-        \bb \mid \bX, \ba & \sim \operatorname{Normal}\left(\boldsymbol{m}_0, \kappa \left(\bX^T \ba^{-1} \bX \right)^{-1}\right),\\
+        \bb & \sim \operatorname{Normal}\left(\boldsymbol{m}_0, \boldsymbol{\Sigma}_B\right),\\
     \ba &\sim \operatorname{Inverse-Wishart}(\boldsymbol{V}_0, a_0),
 \end{align*}
-where $\boldsymbol{V}_0$ is a $n \times n$ scale matrix and $a_0 >  n - 1$ is a scalar encoding the prior degrees of freedom.
+where  $\boldsymbol{\Sigma}_B$ is a $P \times P$ covariance matrix,$\boldsymbol{V}_0$ is a $n \times n$ scale matrix and $a_0 >  n - 1$ is a scalar encoding the prior degrees of freedom.
 
 \textbf{Hint:} \underline{If} you are confused about how to specify $\boldsymbol{V}_0$, a good starting point might be to assume conditional independence \footnote{Also known as assuming the errors are conditionally not autocorrelated.} \underline{\textit{ a priori}}, i.e.,
 \begin{align*}
@@ -93,7 +93,8 @@ where $\boldsymbol{w} = \{w_1, \ldots w_n\}$ and $\sigma^2$ are hyperparameters 
  \item Discuss the theoretical characteristics of the samplers in the previous item: are they ergodic? Are they geometrically ergodic? Can you give a rate?
  \item Evaluate both samplers empirically; which one would you recommend? Do your findings agree with the theory? Which diagnostics/measures of efficiency did you choose and why?
 
-\textbf{Hint:} You are going to need some data for this. If you do not have a favourite data set, consider generating a synthetic one.
+\textbf{Hint:} You are going to need some data for this.
+If you do not have a favourite data set, consider generating a synthetic one.
  
  \item Using the best algorithm you could construct, show how to produce samples from the posterior predictive
 \begin{equation*}
