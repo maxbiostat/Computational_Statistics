@@ -77,7 +77,8 @@ SMC finds application in many areas, but dynamic (linear) models deserve a speci
 
 #### Simulated Annealing
 - The original 1983 [paper](https://www.science.org/doi/10.1126/science.220.4598.671) in Science [open link](http://wexler.free.fr/library/files/kirkpatrick%20(1983)%20optimization%20by%20simulated%20annealing.pdf) by Kirpatrick et al is a great read.
-- [These](https://youtu.be/NPE3zncXA5s) visualisations of the traveling salesman problem might prove useful. 
+- [These](https://youtu.be/NPE3zncXA5s) visualisations of the traveling salesman problem might prove useful.
+- [These](https://www.ime.usp.br/~yambar/MAE5704/Aula10SimulatedAnnealing/aula10slidesT.pdf) notes have a little bit of theory on the cooling scheme.
 
 ## Bootstrap
 
