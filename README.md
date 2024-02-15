@@ -10,7 +10,7 @@ As complementary material,
 
 - These lecture [notes](https://web.archive.org/web/20131215003910/https://statweb.stanford.edu/~susan/courses/s227/)  by stellar statistician [Susan Holmes](https://statweb.stanford.edu/~susan/) are also well worth taking a look.
 
-- [Monte Carlo theory, methods and examples](https://statweb.stanford.edu/~owen/mc/) by [Professor Art Owen](https://statweb.stanford.edu/~owen/), gives a nice and complete treatment of all the topics on simulation, including a whole chapter on variance reduction. 
+- [Monte Carlo theory, methods and examples](https://artowen.su.domains/mc/) by [Professor Art Owen](https://statweb.stanford.edu/~owen/), gives a nice and complete treatment of all the topics on simulation, including a whole chapter on variance reduction. 
 
 Other materials, including lecture notes and slides may be posted here as the course progresses. 
 
