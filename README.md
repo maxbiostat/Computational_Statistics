@@ -42,6 +42,7 @@ Books marked with [a] are advanced material.
 -  Walker's [Alias method](https://en.wikipedia.org/wiki/Alias_method) is a fast way to generate discrete random variables;
 - [Rejection Control and Sequential importance sampling](http://stat.rutgers.edu/home/rongchen/publications/98JASA_rejection-control.pdf) (1998), by Liu et al. discusses how to improve importance sampling by controlling rejections.
 - [This](https://doi.org/10.1214/18-STS676) is a nice general comment about the role of simulation in numerical integration.
+- [This](https://arxiv.org/pdf/2502.07396) survey by Luca Martino and Fernando Llorente is an excellent overview of the optimality results for importance sampling, including the optimal proposal for self-normalising importance sampling.
 
 ### Markov chains
 
