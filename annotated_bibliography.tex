@@ -1,0 +1,222 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+
+% Colors
+\definecolor{linkblue}{RGB}{0, 70, 140}
+\definecolor{titlecolor}{RGB}{30, 50, 100}
+
+% Hyperref setup
+\hypersetup{
+  colorlinks=true,
+  linkcolor=linkblue,
+  urlcolor=linkblue,
+  citecolor=linkblue,
+  pdftitle={Annotated Bibliography -- Computational Statistics},
+  pdfauthor={Luiz Max Carvalho (maxbiostat)},
+  pdfsubject={Computational Statistics},
+}
+
+% Title formatting
+\titleformat{\section}{\large\bfseries\color{titlecolor}}{}{0em}{}[\titlerule]
+
+% Header/footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textit{Annotated Bibliography -- Computational Statistics}}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% List formatting
+\setlist[enumerate,1]{
+  label=\textbf{\arabic*.},
+  leftmargin=2em,
+  itemsep=1.6em,
+  parsep=0pt,
+}
+
+\begin{document}
+
+% ---------- Title block ----------
+\begin{center}
+  {\LARGE\bfseries\color{titlecolor} Annotated Bibliography}\\[0.4em]
+  {\large Computational Statistics}\\[0.3em]
+  {\small PhD Course --- EMAp / FGV\\
+  Repository: \href{https://github.com/maxbiostat/Computational_Statistics}{\texttt{maxbiostat/Computational\_Statistics}}}
+\end{center}
+
+\vspace{0.5em}
+\hrule height 1pt
+\vspace{1.5em}
+
+% ---------- Preamble note ----------
+\noindent
+The entries below survey fourteen landmark papers in Computational Statistics, with particular emphasis on Markov chain Monte Carlo (MCMC) methods.
+Each entry includes a full bibliographic reference followed by an annotation describing the paper's contribution and historical significance.
+
+\vspace{1em}
+
+% ---------- Entries ----------
+\begin{enumerate}
+
+% 1
+\item \textbf{Metropolis, N., Rosenbluth, A.~W., Rosenbluth, M.~N., Teller, A.~H., \& Teller, E.\ (1953).}
+\textit{Equation of State Calculations by Fast Computing Machines.}
+\textit{The Journal of Chemical Physics}, 21(6), 1087--1092.
+\href{https://bayes.wustl.edu/Manual/EquationOfState.pdf}{[PDF]}
+
+The proud history of Markov chain Monte Carlo (MCMC) methods begins with this paper on molecular dynamics.
+Here the partition function was the estimand, and the only way the authors could approach the target integral was by simulating particles randomly and accepting or rejecting moves according to the potential function.
+This acceptance--rejection mechanism became the defining idea of an entire class of algorithms.
+
+% 2
+\item \textbf{Hastings, W.~K.\ (1970).}
+\textit{Monte Carlo Sampling Methods Using Markov Chains and Their Applications.}
+\textit{Biometrika}, 57(1), 97--109.
+\href{https://www.jstor.org/stable/2334940}{[JSTOR]}
+
+In this paper, Wilfred Hastings introduces the ``Metropolis'' algorithm to a general statistical audience, generalising it to arbitrary proposal distributions.
+This is an important development because it frees the algorithm from the constraint of symmetric (random-walk-like) proposals, and it places the whole procedure on solid theoretical footing.
+
+% 3
+\item \textbf{Dempster, A.~P., Laird, N.~M., \& Rubin, D.~B.\ (1977).}
+\textit{Maximum Likelihood from Incomplete Data via the EM Algorithm} (with discussion).
+\textit{Journal of the Royal Statistical Society, Series B}, 39(1), 1--38.
+\href{http://web.mit.edu/6.435/www/Dempster77.pdf}{[PDF]}
+
+In this seminal paper, Dempster, Laird and Rubin introduce the Expectation--Maximisation (EM) algorithm to obtain maximum likelihood estimates in models with latent variables and missing data.
+The work inspired a large body of subsequent research that combines Monte Carlo methods for the E-step, giving rise to the Monte Carlo EM (MCEM) family of algorithms.
+
+% 4
+\item \textbf{Kirkpatrick, S., Gelatt, C.~D., Jr., \& Vecchi, M.~P.\ (1983).}
+\textit{Optimization by Simulated Annealing.}
+\textit{Science}, 220(4598), 671--680.
+\href{https://science.sciencemag.org/content/220/4598/671}{[Science]}
+
+Kirkpatrick and collaborators are among the groups credited with the invention of the simulated annealing (SA) method.
+This paper showcases its application to the famously NP-hard travelling salesman problem.
+A substantial line of subsequent research addressed the design of appropriate cooling schedules to avoid entrapment in local optima.
+
+% 5
+\item \textbf{Geman, S., \& Geman, D.\ (1984).}
+\textit{Stochastic Relaxation, Gibbs Distributions, and the Bayesian Restoration of Images.}
+\textit{IEEE Transactions on Pattern Analysis and Machine Intelligence}, 6(6), 721--741.
+\href{http://www.cis.jhu.edu/publications/papers_in_database/GEMAN/GemanPAMI84.pdf}{[PDF]}
+
+The Gibbs sampler was conceived by the Geman brothers in a setting where sampling from the full joint distribution was intractable, but sampling from each full conditional was straightforward.
+It remains one of the workhorses of computational statistics.
+The sampler is particularly well-suited to Bayesian problems because it allows practitioners to exploit conjugacy for devising highly efficient algorithms.
+
+% 6
+\item \textbf{Tanner, M.~A., \& Wong, W.~H.\ (1987).}
+\textit{The Calculation of Posterior Distributions by Data Augmentation} (with discussion).
+\textit{Journal of the American Statistical Association}, 82(398), 528--540.
+\href{http://www.stat.cmu.edu/~brian/905-2009/all-papers/tanner-wong-1987-with-disc.pdf}{[PDF]}
+
+Tanner and Wong show how a difficult problem can be made easier by enlarging it, that is, by augmenting the state space in a manner analogous to the EM algorithm.
+The idea of expanding the ambient space to simplify calculations is fundamental in statistics; a celebrated modern instance is the P\'olya--Gamma representation of logistic regression (see entry~7 below).
+
+% 7
+\item \textbf{Polson, N.~G., Scott, J.~G., \& Windle, J.\ (2013).}
+\textit{Bayesian Inference for Logistic Models Using P\'olya--Gamma Latent Variables.}
+\textit{Journal of the American Statistical Association}, 108(504), 1339--1349.
+\href{https://www.tandfonline.com/doi/abs/10.1080/01621459.2013.829001}{[Taylor \& Francis]}
+
+Polson, Scott and Windle introduce a data augmentation scheme for Bayesian logistic regression based on P\'olya--Gamma random variables.
+By representing the logistic likelihood in terms of these auxiliary variables, the authors derive a fully conjugate Gibbs sampler, eliminating the need for Metropolis--Hastings steps.
+This is a prime example of the data augmentation principle championed by Tanner \& Wong (1987).
+
+% 8
+\item \textbf{Tierney, L.\ (1994).}
+\textit{Markov Chains for Exploring Posterior Distributions} (with discussion).
+\textit{The Annals of Statistics}, 22(4), 1701--1728.
+\href{http://www.stat.rutgers.edu/~rongchen/papers/tierney.pdf}{[PDF]}
+
+In this landmark paper, Luke Tierney provides a rigorous account of the theoretical foundations of MCMC.
+It marks the beginning of a long tradition of theoretical MCMC work, pursued by researchers such as Gareth Roberts and Jim Hobert, establishing conditions for convergence and geometric ergodicity.
+
+% 8
+\item \textbf{Green, P.~J.\ (1995).}
+\textit{Reversible Jump Markov Chain Monte Carlo Computation and Bayesian Model Determination.}
+\textit{Biometrika}, 82(4), 711--732.
+\href{https://doi.org/10.1093/biomet/82.4.711}{[Biometrika]}
+
+Widely regarded as one of the finest papers in computational statistics, Green's contribution introduces the Reversible Jump MCMC (RJMCMC) algorithm.
+RJMCMC allows sampling over the space of models, enabling simultaneous model fitting and model selection.
+The paper also provides a unified perspective on the Hastings ratio, leading some authors to refer to it as the Hastings--Green ratio.
+
+% 9
+\item \textbf{Neal, R.~M.\ (2003).}
+\textit{Slice Sampling} (with discussion).
+\textit{The Annals of Statistics}, 31(3), 705--767.
+\href{https://projecteuclid.org/euclid.aos/1056562461}{[Project Euclid]}
+
+Radford Neal introduces the slice sampler, a conceptually elegant algorithm that frequently outperforms Metropolis--Hastings-type samplers for strongly log-concave targets.
+The auxiliary variable construction is both theoretically clean and practically effective, and the paper includes extensive empirical comparisons.
+
+% 10
+\item \textbf{Roberts, G.~O., \& Rosenthal, J.~S.\ (2004).}
+\textit{General State Space Markov Chains and MCMC Algorithms.}
+\textit{Probability Surveys}, 1, 20--71.
+\href{https://projecteuclid.org/euclid.ps/1099928648}{[Project Euclid]}
+
+Roberts and Rosenthal present results on Markov chains defined on uncountable state spaces and derive general conditions for geometric ergodicity.
+The paper constitutes a comprehensive treatise on the convergence theory underlying modern MCMC algorithms, and is an essential reference for the theoretically-minded practitioner.
+
+% 11
+\item \textbf{Keith, J.~M., Kroese, D.~P., \& Bryant, D.\ (2004).}
+\textit{A Generalized Markov Sampler.}
+\textit{Methodology and Computing in Applied Probability}, 6(1), 29--53.
+
+Keith, Kroese and Bryant demonstrate how the Reversible Jump MCMC framework of Green (1995) can be viewed as a special case of a more general sampler, providing a unifying perspective and additional algorithmic flexibility.
+
+% 12
+\item \textbf{Neal, R.~M.\ (2011).}
+\textit{MCMC Using Hamiltonian Dynamics.}
+In S.~Brooks, A.~Gelman, G.~Jones, \& X.-L.~Meng (Eds.),
+\textit{Handbook of Markov Chain Monte Carlo} (pp.~113--162). Chapman \& Hall/CRC.
+\href{https://www.cs.utoronto.ca/~radford/ham-mcmc.abstract.html}{[Abstract]}
+
+Another masterpiece by Radford Neal, this chapter provides a thorough review of the history and core concepts of Hamiltonian Monte Carlo (HMC).
+It covers leapfrog integration, the acceptance step, and the role of the mass matrix, and remains the standard reference for understanding the method.
+
+% 13
+\item \textbf{Hoffman, M.~D., \& Gelman, A.\ (2014).}
+\textit{The No-U-Turn Sampler: Adaptively Setting Path Lengths in Hamiltonian Monte Carlo.}
+\textit{Journal of Machine Learning Research}, 15(47), 1593--1623.
+\href{https://arxiv.org/abs/1111.4246}{[arXiv:1111.4246]}
+
+Hoffman and Gelman introduce an algorithm that automatically tunes the step size and tree depth of HMC, eliminating the need for manual tuning.
+The No-U-Turn Sampler (NUTS) became the core algorithm of the \href{https://mc-stan.org/}{Stan} probabilistic programming language and has since enabled Bayesian inference at a scale previously impractical for practitioners.
+
+% 14
+\item \textbf{Andrieu, C., \& Thoms, J.\ (2008).}
+\textit{A Tutorial on Adaptive MCMC.}
+\textit{Statistics and Computing}, 18(4), 343--373.
+\href{https://people.eecs.berkeley.edu/~jordan/sail/readings/andrieu-thoms.pdf}{[PDF]}
+
+Andrieu and Thoms provide a lucid overview of the advantages and pitfalls of adaptive MCMC, where the proposal distribution is updated on the fly using information from the chain's history.
+Particular attention is warranted to Section~2, which discusses the ergodicity conditions that must be satisfied for adaptive schemes to remain valid.
+
+\end{enumerate}
+
+\vspace{2em}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.5em}
+
+\noindent{\small
+This annotated bibliography accompanies the PhD course \emph{Computational Statistics} at EMAp/FGV, curated by Luiz Max Carvalho.
+Source repository: \href{https://github.com/maxbiostat/Computational_Statistics}{\texttt{github.com/maxbiostat/Computational\_Statistics}}.
+Annotations are adapted from the original markdown document with added full bibliographic detail.
+}
+
+\end{document}
